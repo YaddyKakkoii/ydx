@@ -35,7 +35,8 @@ apt install npm
 bash bash.setup build && clear
 ```
 
-# run program < sebelum run pastikan taruh file di folder ~> /root/input/hello.sh <~ >
+# run program 
+# < sebelum run pastikan taruh file di folder ~-> /root/input/hello.sh <-~ >
 ```bash
 bash bash.setup run
 ```
