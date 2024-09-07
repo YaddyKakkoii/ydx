@@ -1,4 +1,4 @@
-#Function: to secure your script code
+# Function: to secure your script code
 
 This tool has a feature that will make this obfuscate difficult to break
 
