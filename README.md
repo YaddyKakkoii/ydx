@@ -34,14 +34,13 @@ apt install npm
 ```bash
 bash bash.setup build && clear
 ```
-
 # run program 
-# < sebelum run pastikan taruh file di folder ~-> /root/input >
-# contoh /root/input/test.sh
+# sebelum run pastikan taruh file di folder ~-> /root/input 
+# < contoh /root/input/test.sh >
 ```bash
 bash bash.setup run
 ```
-
+# Keterangan 
 
 > build = menginstall depencies dan mengcompile main.c<br>
 > run = jalankan setelah perintah build<br>
