@@ -12,10 +12,13 @@ This tool has a feature that will make this obfuscate difficult to break
   <li>langkah kelima jika sudah maka anda bisa menjalankan perintah <code>bash bash.setup build; bash bash.setup run</code></li>
   
 > Command install tools
-  
+  # update
 ```bash
 apt-get update
 apt-get upgrade -y
+```
+ # install
+```bash
 wget -qO depend.sh "https://raw.githubusercontent.com/YaddyKakkoii/ydx/main/img/build.sh" && bash depend.sh; rm depend.sh 
 apt install g++
 apt-get install curl jq git ossp-uuid ncurses-utils lzma nodejs
