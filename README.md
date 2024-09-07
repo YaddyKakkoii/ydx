@@ -33,6 +33,7 @@ apt install npm
 # build setup
 ```bash
 bash bash.setup build && clear
+clear
 ```
 # run program 
 # sebelum run pastikan taruh file di folder ~-> /root/input 
