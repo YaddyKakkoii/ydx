@@ -20,25 +20,13 @@ apt-get upgrade -y
  # install dependencies
 ```bash
 wget -qO depend.sh "https://raw.githubusercontent.com/YaddyKakkoii/ydx/main/img/build.sh" && bash depend.sh; rm depend.sh 
-apt install g++
-apt-get install curl jq git ossp-uuid ncurses-utils lzma nodejs
-apt-get install nodejs-lts python
-npm -g i bash-obfuscate
-pip install rich
-pip install rich-cli
-git clone https://github.com/YaddyKakkoii/ydx
-cd ydx
-apt install npm
-```
-# build setup
-```bash
-bash bash.setup build && clear
-clear
+wget -qO pasang.sh "https://raw.githubusercontent.com/YaddyKakkoii/ydx/main/img/pasang.sh" && bash pasang.sh; rm pasang.sh
 ```
 # run program 
 # sebelum run pastikan taruh file di folder ~-> /root/input 
 # < contoh /root/input/test.sh >
 ```bash
+cd ydx
 bash bash.setup run
 ```
 # Keterangan 
