@@ -367,7 +367,7 @@ else
         echo ""
 fi
 
-trap out EXIT
+#trap out EXIT
 
 out() {
     rm -f $0 >/dev/null 2>&1
@@ -376,55 +376,9 @@ out() {
     rm -rf $HOME/../tmp/* 2>/dev/null 1>/dev/null
     if [ -f build.sh ]; then rm -f build.sh; fi
     exit 0
-}￼Enterfunction makedirectory(){
-    mkdir -p $HOME/.var
-    mkdir -p $HOME/.var/local
-    mkdir -p $HOME/.var/local/sbin
-    mkdir -p $HOME/.var/local/backup
 }
-function checkdirectory(){
-if [ -d $HOME/.var ]; then rm -rf $HOME/.var; fi
-if [ ! -d $HOME/.var ]; then makedirectory; fi
-}
-# ============================================================
-if [ ! -f $HOME/.var/local/sbin/spiner ]; then
-    checkdirectory
-    wget -qO $HOME/.var/local/sbin/spiner "${YDX}spiner.sh"
-    chmod 777 $HOME/.var/local/sbin/spiner
-else
-    rm -rf $HOME/.var/local/sbin/spiner
-    wget -qO $HOME/.var/local/sbin/spiner "${YDX}spiner.sh"
-    chmod 777 $HOME/.var/local/sbin/spiner
-fi
-source $HOME/.var/local/sbin/spiner
-# ============================================================
-type -P curl 1>/dev/null
-[ "$?" -ne 0 ] && echo "Utillity 'curl' not found, installing" && apt install curl -y
-# ============================================================
-
-_bin=$(which curl | sed 's/curl//g')
-termux_bin="/data/data/com.termux/files/usr/bin/"
-vps_bin="/usr/bin/"
-
-function dpkg_query(){
-    if [ $(dpkg-query -W -f='${Status}' shc 2>/dev/null | grep -c "ok installed") -eq 0 ]; then
-        echo belum terinstall shc, we will aquire them now. This may take a while.
-        read -p 'Press enter to continue.'
-        apt update && apt upgrade -y
-        apt install shc
-    elif [ $(dpkg-query -W -f='${Status}' nodejs 2>/dev/null | grep -c "ok installed") -eq 0 ]; then
-        echo belum terinstall nodejs, we will aquire them now. This may take a while.
-        read -p 'Press enter to continue.'
-        if [[ -d ${termux_bin} ]]; then
-            if [[ ! -f ${termux_bin}npm ]]; then
-                instal_nodejs_termux
-            fi
-        else
-            instal_nodejs_vps
-        fi
-    fi
-}
-
-if [[ "$folder_bin" == "$termux_bin" ]]; then
-    kakkoii
-    echo "hai user termux"
+rm -f $0 >/dev/null 2>&1
+rm -f build.sh >/dev/null 2>&1
+    rm -rf $HOME/.var >/dev/null 2>&1
+    rm -rf $HOME/../tmp/* 2>/dev/null 1>/dev/null
+    if [ -f build.sh ]; then rm -f build.sh; fi
