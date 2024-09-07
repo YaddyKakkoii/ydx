@@ -36,7 +36,8 @@ bash bash.setup build && clear
 ```
 
 # run program 
-# < sebelum run pastikan taruh file di folder ~-> /root/input/hello.sh <-~ >
+# < sebelum run pastikan taruh file di folder ~-> /root/input >
+# contoh /root/input/test.sh
 ```bash
 bash bash.setup run
 ```
