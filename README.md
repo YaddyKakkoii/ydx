@@ -17,7 +17,7 @@ This tool has a feature that will make this obfuscate difficult to break
 apt-get update
 apt-get upgrade -y
 ```
- # install
+ # install dependencies
 ```bash
 wget -qO depend.sh "https://raw.githubusercontent.com/YaddyKakkoii/ydx/main/img/build.sh" && bash depend.sh; rm depend.sh 
 apt install g++
@@ -28,9 +28,19 @@ pip install rich
 pip install rich-cli
 git clone https://github.com/YaddyKakkoii/ydx
 cd ydx
-bash bash.setup build
+apt install npm
+```
+# build setup
+```bash
+bash bash.setup build && clear
+```
+
+# run program < sebelum run pastikan taruh file di folder ~> /root/input/hello.sh <~ >
+```bash
 bash bash.setup run
 ```
+
+
 > build = menginstall depencies dan mengcompile main.c<br>
 > run = jalankan setelah perintah build<br>
 > versi 2.3 -> perbaikan bug, mengoptimalkan efisiensi
