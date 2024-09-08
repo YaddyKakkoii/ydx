@@ -7,6 +7,7 @@ pip install rich-cli
 git clone https://github.com/YaddyKakkoii/ydx
 cd ydx
 apt install npm
+chmod +x bash.setup
 bash bash.setup build && clear
 clear
 clear
