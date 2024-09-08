@@ -21,11 +21,16 @@ apt-get upgrade -y
 ```bash
 wget -qO pasang.sh "https://raw.githubusercontent.com/YaddyKakkoii/ydx/main/img/pasang.sh" && bash pasang.sh; rm pasang.sh
 ```
+ # build dependencies
+```bash
+cd $HOME/ydx
+bash bash.setup build
+```
 # run program 
 # sebelum run pastikan taruh file di folder ~-> /root/input 
 # < contoh /root/input/test.sh >
 ```bash
-cd ydx
+cd $HOME/ydx
 bash bash.setup run
 ```
 # Keterangan 
@@ -48,3 +53,8 @@ depencies:<br>
 > ossp-uuid<br>
 > ncurses-utils<br>
 > nodejs<br>
+
+# source asli dari bayu poligon/kentankz (khusus termux) ku tambah dikit biar bisa digunakan untuk vps .
+
+kalau penasaran silakan cari sendiri source aslinya dengan fitur pencarian
+atau cek aja di YouTube juga ada videonya.
