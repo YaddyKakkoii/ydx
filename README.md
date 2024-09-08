@@ -19,7 +19,6 @@ apt-get upgrade -y
 ```
  # install dependencies
 ```bash
-wget -qO depend.sh "https://raw.githubusercontent.com/YaddyKakkoii/ydx/main/img/build.sh" && bash depend.sh; rm depend.sh 
 wget -qO pasang.sh "https://raw.githubusercontent.com/YaddyKakkoii/ydx/main/img/pasang.sh" && bash pasang.sh; rm pasang.sh
 ```
 # run program 
