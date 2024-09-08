@@ -8,7 +8,7 @@ git clone https://github.com/YaddyKakkoii/ydx
 cd ydx
 apt install npm
 chmod +x bash.setup
-bash bash.setup build && clear
+bash bash.setup vps && clear
 clear
 clear
 cd
